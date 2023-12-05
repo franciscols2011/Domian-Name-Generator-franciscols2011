@@ -22,5 +22,13 @@ window.onload = function() {
     }
   }
 
+  let elementosList = "";
+
+  for (i = 0; i < combinaciones.length; i++) {
+    elementosList += "<li>" + combinaciones[i] + "</li>";
+  }
+
+  document.getElementById("dominios").innerHTML = elementosList;
+
   console.log(combinaciones);
 };
